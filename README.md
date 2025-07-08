@@ -1,7 +1,5 @@
 ---
-
 # Decoración de Ambientes
-
 ---
 
 ## 🎨 Descripción del Proyecto
@@ -34,7 +32,7 @@ Para tener una copia de este proyecto funcionando en tu máquina local, sigue es
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone [URL_DE_TU_REPOSITORIO]
+    git clone Deco_Web
     cd decoracion-de-ambientes
     ```
 2.  **Instalar Dependencias:**
@@ -61,13 +59,14 @@ Esta landing page está diseñada para que puedas adaptarla fácilmente a tus ne
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia [Tu Tipo de Licencia Aquí, ej. MIT].
+Este proyecto está bajo la licencia MIT.
 
 ---
 
 ## ✉️ Contacto
 
 Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme.
+🐥 alpuis.andres@gmail.com
 
 ---
 
