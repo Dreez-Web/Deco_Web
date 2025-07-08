@@ -1,0 +1,31 @@
+---
+import { estilos } from "../../content/galeria.js";
+import Layout from "../../layouts/Layout.astro";
+const { params } = Astro;
+
+export async function getStaticPaths() {
+  return estilos.map((estilo) => ({
+    params: { estilo: estilo.slug },
+    props: { estilo },
+  }));
+}
+
+const { estilo } = Astro.props;
+---
+
+<Layout>
+  <div class="relative w-full h-screen overflow-hidden">
+    <!-- Imagen de fondo -->
+    <img src="/deco1.webp" alt="Background image for hero section" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+    <!-- Contenido encima -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center text-white bg-black/50 min-h-screen px-4">
+      <h1 class="text-4xl font-bold mb-6">{estilo.nombre}</h1>
+      <img src={estilo.imagen} alt={estilo.nombre} class="w-full max-w-md rounded-b-lg shadow-lg mb-4" />
+      <p class="text-lg max-w-xl">{estilo.descripcion}</p>
+      <a href="/galeria" class="text-blue-300 hover:underline mt-6 block"> ← Volver a galería </a>
+    </div>
+  </div>
+</Layout>

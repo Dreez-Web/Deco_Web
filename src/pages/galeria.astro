@@ -1,0 +1,22 @@
+---
+import { estilos } from "../content/galeria.js";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="relative flex flex-col items-center pt-28 m-3.5 min-h-screen">
+    <h1 class="text-4xl font-bold mb-8">Galería de Estilos</h1>
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        estilos.map((estilo) => (
+          <a href={`/galeria/${estilo.slug}`} class="block border rounded-lg shadow hover:shadow-lg transition">
+            <img src={estilo.imagen} alt={estilo.nombre} class="w-full h-48 object-cover rounded-t-lg" />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">{estilo.nombre}</h2>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
