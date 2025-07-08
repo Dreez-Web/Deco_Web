@@ -1,0 +1,55 @@
+---
+// Si planeas usar componentes de tarjetas para la galería, impórtalos aquí
+import GalleryCard from "../components/GalleryCard.astro";
+---
+
+<section class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 leading-tight">Observa como transformamos espacios en obras de arte.</h2>
+  </div>
+
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-3 mb-12">
+    <button class="px-6 py-2 rounded-full bg-black text-white text-sm font-medium shadow-md"> Living Room </button>
+    <button
+      class="px-6 py-2 rounded-full bg-white text-gray-700 text-sm font-medium border border-gray-300 shadow-sm hover:bg-gray-50 transition duration-200"
+    >
+      Bedroom
+    </button>
+    <button
+      class="px-6 py-2 rounded-full bg-white text-gray-700 text-sm font-medium border border-gray-300 shadow-sm hover:bg-gray-50 transition duration-200"
+    >
+      Office workspace
+    </button>
+    <button
+      class="px-6 py-2 rounded-full bg-white text-gray-700 text-sm font-medium border border-gray-300 shadow-sm hover:bg-gray-50 transition duration-200"
+    >
+      + Explore more
+    </button>
+  </div>
+  <div class="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto hide-scrollbar overflow-x-auto">
+    <GalleryCard image="/path-to-image1.jpg" title="Living Room Transformation" description="Designed for Kate Graham" />
+
+    <GalleryCard image="/path-to-image1.jpg" title="Living Room Transformation" description="Designed for Kate Graham" />
+
+    <GalleryCard image="/path-to-image1.jpg" title="Living Room Transformation" description="Designed for Kate Graham" />
+  </div>
+</section>
+
+<div class="flex justify-center mt-6 gap-2">
+  <span class="w-2.5 h-2.5 bg-gray-800 rounded-full"></span>
+  <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+  <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+  <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+  <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+</div>
+
+<style>
+  /* Ocultar la barra de desplazamiento pero permitir el scroll */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>

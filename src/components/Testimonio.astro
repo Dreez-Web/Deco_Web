@@ -1,0 +1,129 @@
+---
+// Si planeas usar un componente para la tarjeta de testimonio, impórtalo aquí
+// import TestimonialCard from '../components/TestimonialCard.astro';
+---
+
+<section class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-gray-900 leading-tight sm:text-5xl">Our Clients Love To Talk About Us</h2>
+    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+      Hear from our satisfied clients about how we've transformed their spaces with creativity, precision, and care.
+    </p>
+  </div>
+
+  <div class="max-w-full mx-auto relative">
+    <div class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 hide-scrollbar">
+      <button
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-4 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center z-10 hidden md:flex"
+      >
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg
+        >
+      </button>
+
+      <div class="flex-shrink-0 w-full lg:w-1/2 px-4 snap-center">
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+          <div class="md:w-1/2 flex flex-col items-start text-left">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Client feedback</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              transformed our space into something truly special. Their design ideas were creative, and the execution was flawless. We couldn't be
+              happier with the result! transformed our space into something truly special. Their design ideas were creative, and the execution was
+              flawless. We couldn't be happier with the result!
+            </p>
+            <div class="flex items-center space-x-3 mb-2">
+              <img src="/path-to-avatar-john-doe.jpg" alt="John Doe Avatar" class="w-10 h-10 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-gray-900">John Doe</p>
+                <p class="text-sm text-gray-500">Managing Director, Spherule</p>
+              </div>
+            </div>
+            <div class="flex gap-1">
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+            </div>
+          </div>
+
+          <div class="md:w-1/2 rounded-lg overflow-hidden flex-shrink-0">
+            <img src="/path-to-space-image.jpg" alt="Transformed Space" class="w-full h-full object-cover aspect-[4/3] md:aspect-auto" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 w-full lg:w-1/2 px-4 snap-center">
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+          <div class="md:w-1/2 flex flex-col items-start text-left">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Another Happy Client</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Our living room feels so much more open and inviting now. The team was incredibly professional and delivered exactly what we envisioned,
+              on time and within budget. Highly recommend their services!
+            </p>
+            <div class="flex items-center space-x-3 mb-2">
+              <img src="/path-to-avatar-jane-smith.jpg" alt="Jane Smith Avatar" class="w-10 h-10 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-gray-900">Jane Smith</p>
+                <p class="text-sm text-gray-500">Homeowner</p>
+              </div>
+            </div>
+            <div class="flex gap-1">
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+              <svg class="w-5 h-5 text-gray-300 fill-current" viewBox="0 0 24 24"
+                ><path d="M12 .587l3.692 7.568L24 9.77l-6 5.856L19.423 24 12 20.272 4.577 24 6 15.626 0 9.77l8.308-1.615L12 .587z"></path></svg
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 rounded-lg overflow-hidden flex-shrink-0">
+            <img src="/path-to-space-image2.jpg" alt="Another Transformed Space" class="w-full h-full object-cover aspect-[4/3] md:aspect-auto" />
+          </div>
+        </div>
+      </div>
+      <button
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-4 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center z-10 hidden md:flex"
+      >
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg
+        >
+      </button>
+    </div>
+
+    <div class="flex justify-center mt-6 gap-2">
+      <span class="w-2.5 h-2.5 bg-gray-800 rounded-full"></span>
+      <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+      <span class="w-2.5 h-2.5 bg-gray-300 rounded-full"></span>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Ocultar la barra de desplazamiento pero permitir el scroll */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
